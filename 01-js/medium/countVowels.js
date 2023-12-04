@@ -7,6 +7,11 @@
 
 function countVowels(str) {
     // Your code here
+    let newString = str.toLowerCase();
+    let initialSize = str.length;
+    let stringWithoutVowels = newString.replace(/[aeiou]/g,"");
+    let finalSize = stringWithoutVowels.length;
+    return initialSize - finalSize; 
 }
 
 module.exports = countVowels;
